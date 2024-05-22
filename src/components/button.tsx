@@ -1,12 +1,5 @@
 import { useState } from 'react';
-
-type ButtonProps = {
-  style: {
-    backgroundColor: string;
-    color: string;
-    fontSize: string;
-  };
-};
+import { type ButtonProps } from '../lib/types';
 
 function Button({ style }: ButtonProps) {
   const [count, setCount] = useState(0);
